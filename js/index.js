@@ -476,7 +476,7 @@ function RegionsTable({
       e('div', {className: 'table-responsive covid-data-table-wrapper'},
         e('table', {className: 'table table-hover'}, tHead, tBody)
       ),
-      e('small', {className: 'text-muted'}, '* Table is scrollable')
+      e('small', {className: 'text-muted'}, '* Table is scrollable, 0 data means there was no data output from the information source')
     )
   );
 }
