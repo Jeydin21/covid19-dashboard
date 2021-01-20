@@ -178,7 +178,7 @@ function LastUpdatedDate({covidData}) {
   const lastUpdatedDate = getLastUpdatedDate(covidData);
   return e('small', {className: 'text-muted'},
     'Last updated: ',
-    e('span', {className: 'badge badge-dark'}, lastUpdatedDate)
+    e('span', {className: 'badge badge-dark'}, lastUpdatedDate + ", 2021")
   );
 }
 
