@@ -334,10 +334,10 @@ function TableFilters({
         e(CountrySearch, {countrySearchQuery, onCountrySearch})
       ),
       e('div', {className: 'form-group form-check mr-3 mb-2'},
-        e(Toggle, {checked: groupByCountry, onChange: onGroupByCountries, text: 'Group by countries'})
+        e(Toggle, {checked: groupByCountry, onChange: onGroupByCountries, text: 'Group by Countries'})
       ),
       e('div', {className: 'form-group form-check mr-3 mb-2'},
-        e(Toggle, {text: 'Logarithmic scale', onChange: onUseLogScale, checked: useLogScale})
+        e(Toggle, {text: 'Logarithmic Scale', onChange: onUseLogScale, checked: useLogScale})
       ),
       e('button', {className: 'btn btn-dark mb-2', onClick: onReset},
         e('i', {className: 'fas fa-trash-alt mr-2'}),
@@ -352,7 +352,7 @@ function CountrySearch({countrySearchQuery, onCountrySearch}) {
     e('input', {
       type: 'search',
       className: 'form-control',
-      placeholder: 'Search country',
+      placeholder: 'Search Country Name',
       onChange: (e) => onCountrySearch(e.target.value),
       value: countrySearchQuery,
     })
