@@ -1,3 +1,4 @@
+
 // Globals.
 const r = React;
 const rd = ReactDOM;
@@ -178,7 +179,7 @@ function LastUpdatedDate({covidData}) {
   const lastUpdatedDate = getLastUpdatedDate(covidData);
   return e('small', {className: 'text-muted'},
     'Last Updated: ',
-    e('span', {className: 'badge badge-dark'}, lastUpdatedDate + ", 2021 - 12:50 AM EST")
+    e('span', {className: 'badge badge-dark'}, lastUpdatedDate + ", 2021")
   );
 }
 
@@ -476,7 +477,7 @@ function RegionsTable({
       e('div', {className: 'table-responsive covid-data-table-wrapper'},
         e('table', {className: 'table table-hover'}, tHead, tBody)
       ),
-      e('small', {className: 'text-muted'}, '* Table is scrollable, 0 data means there was no data output from the information source')
+      e('small', {className: 'text-muted'}, '* Table is scrollable, 0 data means there was no data output from the database')
     )
   );
 }
